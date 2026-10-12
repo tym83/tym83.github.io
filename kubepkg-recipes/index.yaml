@@ -1,5 +1,5 @@
 apiVersion: kubepkg.dev/v1alpha1
-generated: "2026-10-12T02:48:46Z"
+generated: "2026-10-12T06:56:54Z"
 kind: RepositoryIndex
 packages:
   ai-gpu:
@@ -909,6 +909,44 @@ packages:
       watches'
     home: https://github.com/kuberoot-dev/kuberoot
     versions:
+    - build: 3
+      digest: sha256:fa2d2ba835bf258cf87d64cf02a066010b7e21cef1053b7abd5bf4da2ba875b0
+      spec:
+        build: 3
+        images:
+        - docker.io/persesdev/perses:v0.54.0@sha256:a0e34ddaf9d7599d96036611af205b948c1179646844202d869f3bcf3d5d9e9c
+        provides:
+        - kuberoot-observability
+        rollback:
+          safe: true
+        variants:
+        - components:
+          - chart:
+              digest: sha256:c90ed1b84029ff34c125f264654b8dac0de6c566967f0a622579de8c26228da4
+              name: observability
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kuberoot-observability
+              version: 0.1.0-3
+            install:
+              namespace: monitoring
+              releaseName: kuberoot-observability
+            name: observability
+          name: default
+          requires:
+          - package: kuberoot-edge
+            version: ~0.2
+          - components:
+              victoria-metrics:
+                values:
+                  grafana:
+                    enabled: false
+            package: victoria-metrics
+            version: ~1.153
+          - package: victoria-logs
+            version: ~1.53
+          - package: perses-operator
+            version: ~0.5
+        version: 0.1.0
+      version: 0.1.0
     - build: 2
       digest: sha256:992839d2988c5e05cbad0bd5916b8d1980bca8f77181cfbf550d61d67c0f8f2e
       spec:

@@ -1,5 +1,5 @@
 apiVersion: kubepkg.dev/v1alpha1
-generated: "2026-10-12T02:45:14Z"
+generated: "2026-10-12T02:48:46Z"
 kind: RepositoryIndex
 packages:
   ai-gpu:
@@ -660,6 +660,32 @@ packages:
     description: Multi-user Jupyter notebooks, one server per user, spawned as pods
     home: https://z2jh.jupyter.org
     versions:
+    - build: 2
+      digest: sha256:18cf43683c8b72902d6f023fc8c60069927fd5ecb986e2d3087036862b8c797c
+      spec:
+        build: 2
+        images:
+        - quay.io/jupyterhub/configurable-http-proxy:5.2.0@sha256:522738d5285e4be758da5023194cbc95249efdadaa62a0998c8ed1aa2890b2da
+        - quay.io/jupyterhub/k8s-hub:4.4.2@sha256:108fbb01c3fe23e4a81efc8899aa73b4c15413615c73dfcdc44248eb63096e41
+        - quay.io/jupyterhub/k8s-network-tools:4.4.2@sha256:5424f72133cfc2cd727a6fb5b100cf9f7151da8bbaea7a5fddddf91aa6a314e4
+        - quay.io/jupyterhub/k8s-singleuser-sample:4.4.2@sha256:65e1b09fc8c902d8ed5b2130412a3eb1682d47237e0383775dc3342276ca965c
+        provides:
+        - jupyterhub
+        - notebooks
+        rollback: {}
+        variants:
+        - components:
+          - chart:
+              digest: sha256:ee1316f3f53f25a58a641ea86c715b14aaf11788dd75d6052d79d4f7448c9f17
+              name: jupyterhub
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/jupyterhub
+              version: 5.5.2-2
+            install:
+              namespace: jupyterhub
+            name: jupyterhub
+          name: default
+        version: 5.5.2
+      version: 5.5.2
     - build: 1
       digest: sha256:6453fab80ad79e5603dcedabba4476bc9c07db7ff9fb5ad9c795ef4d5ee6aad5
       spec:
@@ -1775,6 +1801,29 @@ packages:
     description: 'MLflow tracking server: experiments, runs, metrics and a model registry'
     home: https://mlflow.org
     versions:
+    - build: 2
+      digest: sha256:40af1b82baa791b0451fa73acb2328736ef4c11327aa90a8c3954da678729e68
+      spec:
+        build: 2
+        images:
+        - docker.io/burakince/mlflow:3.16.0@sha256:ab4b566644b90f00f7baf024ab4255e8219a6eeb530f34dd996fd0b0769c5fe1
+        provides:
+        - mlflow
+        - experiment-tracking
+        rollback: {}
+        variants:
+        - components:
+          - chart:
+              digest: sha256:9ad4a1138ca8f5357b538401d96b5d3d4c53f35b14503b570f2efedaa69b83f5
+              name: mlflow
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/mlflow
+              version: 3.16.0-2
+            install:
+              namespace: mlflow
+            name: mlflow
+          name: default
+        version: 3.16.0
+      version: 3.16.0
     - build: 1
       digest: sha256:41f6d52c5bf7bcb15602e75836ec46ae53207bb344edb41bf2cf647d8b36d6a5
       spec:
@@ -1891,6 +1940,37 @@ packages:
       Perses instances and syncs PersesDashboard and PersesDatasource objects to them'
     home: https://perses.dev
     versions:
+    - build: 3
+      digest: sha256:8d67549c05000ba1abf2a26cb57f9d5f8031fa2df65117913b1d9b37d5fe5159
+      spec:
+        build: 3
+        crds:
+        - perses.perses.dev
+        - persesdashboards.perses.dev
+        - persesdatasources.perses.dev
+        - persesglobaldatasources.perses.dev
+        images:
+        - docker.io/persesdev/perses-operator:v0.5.0@sha256:8f8d7b09caefc35777dc88b9e8823efb7232b1ce2869648575176e760d7b55bf
+        - quay.io/brancz/kube-rbac-proxy:v0.22.1@sha256:e8cad21b2f9ad0302f1ec972c555a1d916f51aae6003da3cd2554d5f29bb9bc4
+        - docker.io/persesdev/perses:v0.54.0@sha256:a0e34ddaf9d7599d96036611af205b948c1179646844202d869f3bcf3d5d9e9c
+        provides:
+        - perses
+        - dashboards
+        rollback:
+          safe: true
+        variants:
+        - components:
+          - chart:
+              digest: sha256:a43f75da998cf9475788031968ce66b3dbdbdf45f6a7d467a42716f92c75f295
+              name: perses-operator
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/perses-operator
+              version: 0.5.0-3
+            install:
+              namespace: perses-operator
+            name: perses-operator
+          name: default
+        version: 0.5.0
+      version: 0.5.0
     - build: 2
       digest: sha256:fcccf16496fa98a523636b0a586e22d21a25c4b15af1ffbfe2b120d3d1d84ff0
       spec:

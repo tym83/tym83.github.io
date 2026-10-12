@@ -1,11 +1,11 @@
 apiVersion: kubepkg.dev/v1alpha1
-generated: "2026-10-10T15:47:31Z"
+generated: "2026-10-12T02:45:14Z"
 kind: RepositoryIndex
 packages:
   ai-gpu:
     description: Whole NVIDIA GPUs for pods, with GPU metrics, on nodes that carry
       the driver
-    home: https://github.com/tym83/kubepkg-recipes
+    home: https://github.com/kuberoot-dev/kubepkg-recipes
     versions:
     - build: 1
       digest: sha256:8c7fb6abee9f3bd9a0a03017c5eb9c0b1b81561a8344ec3b1641f0e77fc00689
@@ -23,7 +23,7 @@ packages:
   ai-gpu-sharing:
     description: NVIDIA GPUs shared between pods by memory and compute (HAMi), with
       GPU metrics
-    home: https://github.com/tym83/kubepkg-recipes
+    home: https://github.com/kuberoot-dev/kubepkg-recipes
     versions:
     - build: 1
       digest: sha256:1d903fac2f8ae30f587716a81242544f4bc60246fdc6ca540965612d309bba6e
@@ -41,7 +41,7 @@ packages:
   ai-inference:
     description: 'Serving language models: a model server, a gateway with one OpenAI-compatible
       API in front of it, and a chat interface'
-    home: https://github.com/tym83/kubepkg-recipes
+    home: https://github.com/kuberoot-dev/kubepkg-recipes
     versions:
     - build: 1
       digest: sha256:bcb40be90d8912662f5fd8cbaf43f77bda5dce484c52e689c507372bdafeac38
@@ -61,7 +61,7 @@ packages:
   ai-rag:
     description: 'Retrieval-augmented generation: model serving and a chat interface
       with a vector database for documents'
-    home: https://github.com/tym83/kubepkg-recipes
+    home: https://github.com/kuberoot-dev/kubepkg-recipes
     versions:
     - build: 1
       digest: sha256:1109aeeb3fd07d432b7ceacb7ac48bc4ee62b57ff8f5333915eb920574be9497
@@ -79,7 +79,7 @@ packages:
   ai-training:
     description: 'Training and fine-tuning: job queues, gang scheduling, Ray, Kubeflow
       Trainer, notebooks, experiment tracking and S3 storage'
-    home: https://github.com/tym83/kubepkg-recipes
+    home: https://github.com/kuberoot-dev/kubepkg-recipes
     versions:
     - build: 1
       digest: sha256:22bf30e4fd75e890ad7f6f656e54dfb439c31184417606637c86c7923da0bb2e
@@ -109,7 +109,7 @@ packages:
     home: https://github.com/kubevirt/containerized-data-importer
     versions:
     - build: 4
-      digest: sha256:8d36e706fdbae966b079fa0bf67613b6d9895579fb842634f7cef745512d3b54
+      digest: sha256:a4aa7cca8aec7fe810256cb23e3254962fed362e75e8bc9fa8e3e6e1fef3e3e7
       spec:
         build: 4
         crds:
@@ -131,7 +131,7 @@ packages:
           - chart:
               digest: sha256:9af0379f4fb9b84d7a09b14f1cf92389bf15e7bc2069bc3c38b22770c4d9ca4e
               name: cdi-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/cdi
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/cdi
               version: 1.66.1-4
             install:
               namespace: cdi
@@ -139,7 +139,7 @@ packages:
           - chart:
               digest: sha256:fe3a35bbab8aad59b20338a6235fea32ca152705e1d6e7daf2281fc5c860c329
               name: cdi
-              repository: oci://ghcr.io/tym83/kubepkg-packages/cdi
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/cdi
               version: 1.66.1-4
             install:
               dependsOn:
@@ -155,7 +155,7 @@ packages:
         version: 1.66.1
       version: 1.66.1
     - build: 3
-      digest: sha256:e23c9ac1891fcf0e0a96a1270296d015e742592a0db43f7b39f95c4a5a13bdc8
+      digest: sha256:1281beb0ca7055297219984669e23e7579397b0474e06031a753034fdd729564
       spec:
         build: 3
         crds:
@@ -169,7 +169,7 @@ packages:
           - chart:
               digest: sha256:f0bfa0d2d4b7af049a1c37e4b8507e5553cb009479843b4f9cb2c88afe046ef7
               name: cdi-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/cdi
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/cdi
               version: 1.66.1-3
             install:
               namespace: cdi
@@ -177,7 +177,7 @@ packages:
           - chart:
               digest: sha256:c946667195cfd92ad5e4c823842b71b3521fa8284fb5f878e6cdd6424a0fe654
               name: cdi
-              repository: oci://ghcr.io/tym83/kubepkg-packages/cdi
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/cdi
               version: 1.66.1-3
             install:
               dependsOn:
@@ -193,7 +193,7 @@ packages:
         version: 1.66.1
       version: 1.66.1
     - build: 2
-      digest: sha256:09f27636a1083147e78c5c1aef6bce816800800a592c5b527469f82d055ccb73
+      digest: sha256:393047a09dfe2d15ec61bb2c1da609fa1aadb3915862ba2b9a2c24731d6d639f
       spec:
         build: 2
         crds:
@@ -207,7 +207,7 @@ packages:
           - chart:
               digest: sha256:4756973205d798b6d8e457793576b1a0539a8dc6afdf61a6990ccec757f31d0a
               name: cdi-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/cdi
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/cdi
               version: 1.66.1-2
             install:
               namespace: cdi
@@ -215,7 +215,7 @@ packages:
           - chart:
               digest: sha256:10e72f117ff7b432d4fb7e65d42c55252f26bacf0c59516218b885fe22da358a
               name: cdi
-              repository: oci://ghcr.io/tym83/kubepkg-packages/cdi
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/cdi
               version: 1.66.1-2
             install:
               dependsOn:
@@ -226,7 +226,7 @@ packages:
         version: 1.66.1
       version: 1.66.1
     - build: 1
-      digest: sha256:601631f11668e2db8ab6e5a30a82cd5969f480d39336369f50e59b697c51cdb9
+      digest: sha256:bfa52f563381954c45061f036dc8488b93108f5dec4343f4904f7d2c364b2da0
       spec:
         build: 1
         crds:
@@ -237,7 +237,7 @@ packages:
         rollback: {}
         sourceRef:
           kind: OCIArtifact
-          url: oci://ghcr.io/tym83/kubepkg-packages/cdi@sha256:0bd48fc6be09711156cdb6f276bf0a0d15f4d62bde4b7382e050a358d8e31837
+          url: oci://ghcr.io/kuberoot-dev/kubepkg-packages/cdi@sha256:0bd48fc6be09711156cdb6f276bf0a0d15f4d62bde4b7382e050a358d8e31837
         variants:
         - components:
           - install:
@@ -258,7 +258,7 @@ packages:
     home: https://cert-manager.io
     versions:
     - build: 3
-      digest: sha256:d984ccd7c0ecff62533ea055b9304ed8a63f6d34ab51a0849c668103294c8d8e
+      digest: sha256:b8eb1cdd8cce7f6cdb20117d79704076cf37217dd4efdc3d650731d5b373e02b
       spec:
         build: 3
         crds:
@@ -283,7 +283,7 @@ packages:
           - chart:
               digest: sha256:a7587bf9270c6ee7d317bd2a493095c2f69de45868adef52f54a1a94375cc2a5
               name: cert-manager
-              repository: oci://ghcr.io/tym83/kubepkg-packages/cert-manager
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/cert-manager
               version: 1.21.2-3
             install:
               namespace: cert-manager
@@ -293,7 +293,7 @@ packages:
         version: 1.21.2
       version: 1.21.2
     - build: 2
-      digest: sha256:4fb3371fb634c369121545ac12a1d016d2abbb569106a3a30e2f3242f20a7cd8
+      digest: sha256:92848332b5e0c8a8d2c38916e8b05362d8600ee91e8a9f770c9a397eb977bfbf
       spec:
         build: 2
         crds:
@@ -313,7 +313,7 @@ packages:
           - chart:
               digest: sha256:524f175898e4dcbaf9b444b2bb8ea00dfa5ed0078703ae6e128cc9462c151e45
               name: cert-manager
-              repository: oci://ghcr.io/tym83/kubepkg-packages/cert-manager
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/cert-manager
               version: 1.21.2-2
             install:
               namespace: cert-manager
@@ -323,7 +323,7 @@ packages:
         version: 1.21.2
       version: 1.21.2
     - build: 1
-      digest: sha256:a1200d0d113125b30cdff84d3d12bf7508ed9319b50489ec67aa2f416acdbc1e
+      digest: sha256:207ce5041e96f4c95a9583a390e7f1953c201630b6189d08e99b596c4130475d
       spec:
         build: 1
         crds:
@@ -340,7 +340,7 @@ packages:
         rollback: {}
         sourceRef:
           kind: OCIArtifact
-          url: oci://ghcr.io/tym83/kubepkg-packages/cert-manager@sha256:3bc4a4af497ede970ceb05c301ea7f77c945e95a722d466ffb17a2267a147f62
+          url: oci://ghcr.io/kuberoot-dev/kubepkg-packages/cert-manager@sha256:3bc4a4af497ede970ceb05c301ea7f77c945e95a722d466ffb17a2267a147f62
         variants:
         - components:
           - install:
@@ -356,7 +356,7 @@ packages:
     home: https://cilium.io/
     versions:
     - build: 1
-      digest: sha256:bca634285d6d65e666e561da10e3351acd80cd86fb5fcb1acd2ceb516c94f9d6
+      digest: sha256:496d6ae352d9fc4e642ce642b7e8f643e6037570f0a3c494a1674360679e7759
       spec:
         build: 1
         conflicts:
@@ -375,7 +375,7 @@ packages:
           - chart:
               digest: sha256:a1097404834594dd024ace4eff9e8d7ce549834eb8718c324c2f0bcb84355d10
               name: cilium
-              repository: oci://ghcr.io/tym83/kubepkg-packages/cilium
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/cilium
               version: 1.20.2-1
             install:
               namespace: kube-system
@@ -390,7 +390,7 @@ packages:
     home: https://cloudnative-pg.io
     versions:
     - build: 1
-      digest: sha256:adbe41c93c8a9b74f647f92dd8e5ac0a2faa8a20dc49f9e51ea13c1083222533
+      digest: sha256:3a6898f5430c80b522b9758eaa9ca33a97457e3b5c04968bf1a61ffdad87d391
       spec:
         build: 1
         crds:
@@ -417,7 +417,7 @@ packages:
           - chart:
               digest: sha256:6d109cbcd62bff65a381e2745ce04597c88acaf18c7ad0b8f33ee517feacf87a
               name: cloudnative-pg
-              repository: oci://ghcr.io/tym83/kubepkg-packages/cloudnative-pg
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/cloudnative-pg
               version: 1.30.1-1
             install:
               namespace: cnpg-system
@@ -432,7 +432,7 @@ packages:
     home: https://coredns.io
     versions:
     - build: 2
-      digest: sha256:2f2142f153a460cb44d8804a87e3bdf8f16e353870da4f8684c917ce9d5c0813
+      digest: sha256:3517950aa913b39430c80ed1e0a722d5eb2fd51823aa045776c5b9f5d8138565
       spec:
         build: 2
         images:
@@ -447,7 +447,7 @@ packages:
           - chart:
               digest: sha256:bbc80404dcdfac89a8246ef289cb4d2977c6b5c5c40f2698341bb9600c310d1e
               name: coredns
-              repository: oci://ghcr.io/tym83/kubepkg-packages/coredns
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/coredns
               version: 1.14.7-2
             install:
               namespace: kube-system
@@ -457,7 +457,7 @@ packages:
         version: 1.14.7
       version: 1.14.7
     - build: 1
-      digest: sha256:7cf550c4f87b25da0c1b641244fbe69832948d1561d854cfe0363f414a03786a
+      digest: sha256:a51640eb3fd632a1462a2460c422f472e923639f4152d7847e9bc8aa4653ce70
       spec:
         build: 1
         provides:
@@ -470,7 +470,7 @@ packages:
           - chart:
               digest: sha256:931550435c87bbf32b1cdf34e7ba0e9e86e4ad901d6078e61326234126322c3d
               name: coredns
-              repository: oci://ghcr.io/tym83/kubepkg-packages/coredns
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/coredns
               version: 1.14.7-1
             install:
               namespace: kube-system
@@ -485,7 +485,7 @@ packages:
     home: https://github.com/NVIDIA/dcgm-exporter
     versions:
     - build: 1
-      digest: sha256:298cc65bbfb39a195374ec744f681ae0f2f9cd35aed2d67864ce34f220e5453d
+      digest: sha256:8651e4ba9b5e55cc984d759877b455ccf125d6ac842ab5320fc32da2fb92e119
       spec:
         build: 1
         images:
@@ -499,7 +499,7 @@ packages:
           - chart:
               digest: sha256:eff1487fec6f5b0a8b1be661798e5b53092d2788c15eeeea585197446857a2d7
               name: dcgm-exporter
-              repository: oci://ghcr.io/tym83/kubepkg-packages/dcgm-exporter
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/dcgm-exporter
               version: 4.8.4-1
             install:
               namespace: dcgm-exporter
@@ -513,7 +513,7 @@ packages:
     home: https://gateway.envoyproxy.io/
     versions:
     - build: 2
-      digest: sha256:807eee3636f38e69e2b47d2995e0249a5c148d5d7818f32eaea716025c2eb0c9
+      digest: sha256:c468c8f69f2a884608278592f917f2b63f269195ceb2283c693ea3c2a8d936e5
       spec:
         build: 2
         crds:
@@ -537,7 +537,7 @@ packages:
           - chart:
               digest: sha256:f731d31528bd72fbadce65686d8873c20c7d8693e3c3396ea62be7b94914c277
               name: envoy-gateway
-              repository: oci://ghcr.io/tym83/kubepkg-packages/envoy-gateway
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/envoy-gateway
               version: 1.9.2-2
             install:
               namespace: envoy-gateway-system
@@ -550,7 +550,7 @@ packages:
         version: 1.9.2
       version: 1.9.2
     - build: 1
-      digest: sha256:fd490f10caeb2044c1d9990099345dd3bf78b1b6fcde9b6c848d6550048fab76
+      digest: sha256:e37dbc5a62999b2882d6bfa1a0826d01f5f368a48f8186a687f1af94d0896af0
       spec:
         build: 1
         crds:
@@ -570,7 +570,7 @@ packages:
           - chart:
               digest: sha256:beaf6a1c1466b728bbe794747817dec517fa2a42efa58713aa6099c17b24c331
               name: envoy-gateway
-              repository: oci://ghcr.io/tym83/kubepkg-packages/envoy-gateway
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/envoy-gateway
               version: 1.9.2-1
             install:
               namespace: envoy-gateway-system
@@ -588,7 +588,7 @@ packages:
     home: https://gateway-api.sigs.k8s.io
     versions:
     - build: 1
-      digest: sha256:a5f6d0df48ae064a6fe7f468e36f03f173e50c85aa411ac49e528050bf940142
+      digest: sha256:a5c9d0c80dd373f1144f6abb5a8cdb2324afaf659a4775ec6ea1c265edf9e71f
       spec:
         build: 1
         crds:
@@ -614,7 +614,7 @@ packages:
           - chart:
               digest: sha256:bc010d3d9437167becaa594fd6d334f3e073f1dbba93a5c334b349348ac16132
               name: gateway-api
-              repository: oci://ghcr.io/tym83/kubepkg-packages/gateway-api
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/gateway-api
               version: 1.6.1-1
             install:
               namespace: kube-system
@@ -628,7 +628,7 @@ packages:
     home: https://project-hami.io
     versions:
     - build: 1
-      digest: sha256:7ffc04005945f90f59966d128a551f65a83b661104e10867f999ed7924221a78
+      digest: sha256:490ed5d9e66f67f4a27c36e532146ea9d47f3be6d3b17f4f0120a32e241c35f8
       spec:
         build: 1
         conflicts:
@@ -647,7 +647,7 @@ packages:
           - chart:
               digest: sha256:1d43f35b6cfd0dbb40137acd6bbccbb2bea1c409a20f03dffdbda749f7c403e8
               name: hami
-              repository: oci://ghcr.io/tym83/kubepkg-packages/hami
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/hami
               version: 2.10.0-1
             install:
               namespace: hami-system
@@ -661,7 +661,7 @@ packages:
     home: https://z2jh.jupyter.org
     versions:
     - build: 1
-      digest: sha256:69672cdfc96438ce15a7f22c897a7184bafb35b66539a30be48dd47a868dfe70
+      digest: sha256:6453fab80ad79e5603dcedabba4476bc9c07db7ff9fb5ad9c795ef4d5ee6aad5
       spec:
         build: 1
         images:
@@ -678,7 +678,7 @@ packages:
           - chart:
               digest: sha256:beb24c1153c8ce2aba304a20e6a55a8a18133e0413d9235fea7166d35f8e8fbc
               name: jupyterhub
-              repository: oci://ghcr.io/tym83/kubepkg-packages/jupyterhub
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/jupyterhub
               version: 5.5.2-1
             install:
               namespace: jupyterhub
@@ -691,7 +691,7 @@ packages:
     home: https://github.com/kubernetes/kube-state-metrics
     versions:
     - build: 3
-      digest: sha256:d7db6832fadd1e47cf4688928d809382814acbb1c269b6765798a896ec1d2fd6
+      digest: sha256:e7cd043e586ed6873dfe0d1d79fb4e7ef019057a57920f5ae3ee36f043df7914
       spec:
         build: 3
         images:
@@ -705,7 +705,7 @@ packages:
           - chart:
               digest: sha256:2bf8279f5f6195dfb6332dfb8c1251bdcf5a00754dd97102411a614f685d329e
               name: kube-state-metrics
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kube-state-metrics
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kube-state-metrics
               version: 2.20.0-3
             install:
               namespace: kube-state-metrics
@@ -715,7 +715,7 @@ packages:
         version: 2.20.0
       version: 2.20.0
     - build: 2
-      digest: sha256:98e2f44d4e5e8f31cd9771c2acb32ef11a505c886057430c47bef1c0f36450b0
+      digest: sha256:775ab886375c67021db7161b033d96f3222439da2689b24350ea6b13d8ff0aec
       spec:
         build: 2
         provides:
@@ -727,7 +727,7 @@ packages:
           - chart:
               digest: sha256:12f0b882afd2d34c43a9fff09462825ceb425ad667769f632db88f79932adbb0
               name: kube-state-metrics
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kube-state-metrics
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kube-state-metrics
               version: 2.20.0-2
             install:
               namespace: kube-state-metrics
@@ -737,7 +737,7 @@ packages:
         version: 2.20.0
       version: 2.20.0
     - build: 1
-      digest: sha256:34735d53bf214927089a4833156ecadedad4ee0f8e60c5193789c76397405ec2
+      digest: sha256:d5b37b6914a8131c1a9760246838630cb267e4f6618522d5a0c39f5a76907807
       spec:
         build: 1
         provides:
@@ -746,7 +746,7 @@ packages:
           safe: true
         sourceRef:
           kind: OCIArtifact
-          url: oci://ghcr.io/tym83/kubepkg-packages/kube-state-metrics@sha256:18cf67f44f4cff26030ee2e18da7f602ca509918e6b0ce726e89a1efdeeb1575
+          url: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kube-state-metrics@sha256:18cf67f44f4cff26030ee2e18da7f602ca509918e6b0ce726e89a1efdeeb1575
         variants:
         - components:
           - install:
@@ -763,7 +763,7 @@ packages:
     home: https://www.kubeflow.org/docs/components/trainer/
     versions:
     - build: 1
-      digest: sha256:44abbef790e4679a31f0cdd7f65e8fa481e3b2aaec2d9f2827131cd4b2edba85
+      digest: sha256:7b0ae678116293890e4ec4f57b57cc7f7324bc06d6b45ba7ad0912aaf1470742
       spec:
         build: 1
         crds:
@@ -784,7 +784,7 @@ packages:
           - chart:
               digest: sha256:29acb769f98a200b5f14ae86196d91d69d4f381ac07517c5e74a54a921aaae7b
               name: kubeflow-trainer
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubeflow-trainer
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubeflow-trainer
               version: 2.3.0-1
             install:
               namespace: kubeflow-system
@@ -799,7 +799,7 @@ packages:
     home: https://docs.ray.io/en/latest/cluster/kubernetes/
     versions:
     - build: 1
-      digest: sha256:e0fa35bbd6a2ac0c2330c45dfa9c22b2d355abd55c6d4741aebe06b5d4fb99bf
+      digest: sha256:d575b29cf6f725080832336dff4aac69a15900ca0c50dd6a66ace82c8252744d
       spec:
         build: 1
         crds:
@@ -819,7 +819,7 @@ packages:
           - chart:
               digest: sha256:98ff14c8ea9ba7ed4bc011b435be717f4cae230a004b5d49d7c1854dc30aada4
               name: kuberay-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kuberay-operator
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kuberay-operator
               version: 1.7.1-1
             install:
               namespace: kuberay-system
@@ -831,7 +831,7 @@ packages:
   kuberoot-ai:
     description: 'The cluster add-ons of the kuberoot ai distribution: those of edge,
       which AI packages add to'
-    home: https://github.com/tym83/kuberoot
+    home: https://github.com/kuberoot-dev/kuberoot
     versions:
     - build: 1
       digest: sha256:4ba1d5765cf792b086a062e54c21bdc769ab8d9075c20799c6a715cf793ca88a
@@ -847,7 +847,7 @@ packages:
   kuberoot-edge:
     description: 'The cluster add-ons of the kuberoot edge distribution: DNS, resource
       metrics and default storage'
-    home: https://github.com/tym83/kuberoot
+    home: https://github.com/kuberoot-dev/kuberoot
     versions:
     - build: 1
       digest: sha256:1dcd2644c9a87a80baec91456c4044f22c02c6588a01bfd948c313bc9f2d4154
@@ -881,10 +881,10 @@ packages:
     description: 'The cluster add-ons of the kuberoot observability distribution:
       edge''s, metrics, logs and alerts, Perses dashboards for the devices the cluster
       watches'
-    home: https://github.com/tym83/kuberoot
+    home: https://github.com/kuberoot-dev/kuberoot
     versions:
     - build: 2
-      digest: sha256:1e8c047ebd62436eb91497925b12f9931088d8dc71bb3311c56f971d7ede5bf4
+      digest: sha256:992839d2988c5e05cbad0bd5916b8d1980bca8f77181cfbf550d61d67c0f8f2e
       spec:
         build: 2
         images:
@@ -898,7 +898,7 @@ packages:
           - chart:
               digest: sha256:570d6bae66cbb0892acac84f7fb421d3b66de79fd765e346f3ad815dc396b8cd
               name: observability
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kuberoot-observability
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kuberoot-observability
               version: 0.1.0-2
             install:
               namespace: monitoring
@@ -917,7 +917,7 @@ packages:
         version: 0.1.0
       version: 0.1.0
     - build: 1
-      digest: sha256:e849e333eb8b18308dc1035f009a9f35b80e57795644447dbd38939d0b37bafb
+      digest: sha256:cccfcc5a46a0d1d9e3c104f39e5fbe3c3b42fd9a44aa67356427531242c9a3d0
       spec:
         build: 1
         images:
@@ -931,7 +931,7 @@ packages:
           - chart:
               digest: sha256:e3ef8b872047951996b3cc698656d9e75324b49d4fed2b4955aa3384160fef80
               name: observability
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kuberoot-observability
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kuberoot-observability
               version: 0.1.0-1
             install:
               namespace: monitoring
@@ -952,7 +952,7 @@ packages:
   kuberoot-platform:
     description: 'A complete platform on a cluster: certificates, metrics, monitoring,
       logs, storage, ingress, load balancers and virtual machines'
-    home: https://github.com/tym83/kubepkg-recipes
+    home: https://github.com/kuberoot-dev/kubepkg-recipes
     versions:
     - build: 1
       digest: sha256:24575a3479556ffc35aec98cdd0ca8bb79e4c2beb6444b0dab17c88de2c27e3c
@@ -985,7 +985,7 @@ packages:
   kuberoot-platform-full:
     description: kuberoot-platform with policies (Kyverno), backups (Velero) and replicated
       storage (Piraeus)
-    home: https://github.com/tym83/kubepkg-recipes
+    home: https://github.com/kuberoot-dev/kubepkg-recipes
     versions:
     - build: 1
       digest: sha256:3992b30998c74175faf8dd7426ffbe76eace850ec74fe4ffe51abeada9728cfd
@@ -1021,7 +1021,7 @@ packages:
       version: 0.1.0
   kuberoot-rt:
     description: 'The cluster add-ons of the kuberoot rt distribution: those of edge'
-    home: https://github.com/tym83/kuberoot
+    home: https://github.com/kuberoot-dev/kuberoot
     versions:
     - build: 1
       digest: sha256:4ba1d5765cf792b086a062e54c21bdc769ab8d9075c20799c6a715cf793ca88a
@@ -1039,7 +1039,7 @@ packages:
     home: https://kubevirt.io
     versions:
     - build: 7
-      digest: sha256:02f83925b36635e5de55971b794511fe32fb62f112fbc298a68fcc31b36b6206
+      digest: sha256:214a9a9d494ebba9c82403336ef482e4eb1e94280001bdf765a5a63852b258ce
       spec:
         build: 7
         crds:
@@ -1063,7 +1063,7 @@ packages:
           - chart:
               digest: sha256:dd5b61f4ef4860364da430ce6fda3dba98cdc6a81463929dabf6ba76f6792d76
               name: kubevirt-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubevirt
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt
               version: 1.9.0-7
             install:
               namespace: kubevirt
@@ -1072,7 +1072,7 @@ packages:
           - chart:
               digest: sha256:9f4b082cdb988826ee53ebe88d4a11adc64d5c1ec8fd71cd29d4baf79b7eea72
               name: kubevirt
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubevirt
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt
               version: 1.9.0-7
             install:
               dependsOn:
@@ -1091,7 +1091,7 @@ packages:
         version: 1.9.0
       version: 1.9.0
     - build: 6
-      digest: sha256:ab8a6c7ad1d321e5203b01e0ecf8a98699e65eae600fe240f0a2992b344ffcb1
+      digest: sha256:035b6d69820c1ab255695d184390e34e9cc6047e683c3f8973222529c137c7f0
       spec:
         build: 6
         crds:
@@ -1115,7 +1115,7 @@ packages:
           - chart:
               digest: sha256:786ddcf993a1b88134b4307ebd5aed7b873a79e35903caade2aaef248bf2cee1
               name: kubevirt-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubevirt
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt
               version: 1.9.0-6
             install:
               namespace: kubevirt
@@ -1123,7 +1123,7 @@ packages:
           - chart:
               digest: sha256:215937eadf207179408486209ff246ca95e0655376c4c51368d8d9b232fc678f
               name: kubevirt
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubevirt
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt
               version: 1.9.0-6
             install:
               dependsOn:
@@ -1142,7 +1142,7 @@ packages:
         version: 1.9.0
       version: 1.9.0
     - build: 5
-      digest: sha256:bc0728bd4cede1479cc35d713b5a77f92b3d670cbe414bc165f5b246275caf25
+      digest: sha256:c4bada6019ee6c9840d6f692187d68e9fcbb2e36adc58d8f63c3a1c3b9cb4818
       spec:
         build: 5
         crds:
@@ -1156,7 +1156,7 @@ packages:
           - chart:
               digest: sha256:c420183c9b98163eaa5a4108c605391d0c27500a003c56021aff06cada8b742f
               name: kubevirt-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubevirt
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt
               version: 1.9.0-5
             install:
               namespace: kubevirt
@@ -1164,7 +1164,7 @@ packages:
           - chart:
               digest: sha256:03b5db78923a3cb673a0f1d358b492f26e9fcb0b1126a6157c265c726a8dbb18
               name: kubevirt
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubevirt
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt
               version: 1.9.0-5
             install:
               dependsOn:
@@ -1183,7 +1183,7 @@ packages:
         version: 1.9.0
       version: 1.9.0
     - build: 4
-      digest: sha256:885be7e708e0c19f3dfd71ef45ca03da984018aa61b4bd2a71d2e7cfbd74d7fa
+      digest: sha256:bfe1081386045ed38865b99737f153bdcc0d3580466fbe8001b1f0fd634892c1
       spec:
         build: 4
         crds:
@@ -1197,7 +1197,7 @@ packages:
           - chart:
               digest: sha256:7b39148622bba744ef9263bebe5123767b7c589ab546b34b92fc1f583bddd013
               name: kubevirt-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubevirt
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt
               version: 1.9.0-4
             install:
               namespace: kubevirt
@@ -1205,7 +1205,7 @@ packages:
           - chart:
               digest: sha256:df7951249d639d8e34043f19702a2a7ddf2890bf08f0237b69818441e1de44c3
               name: kubevirt
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubevirt
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt
               version: 1.9.0-4
             install:
               dependsOn:
@@ -1219,7 +1219,7 @@ packages:
         version: 1.9.0
       version: 1.9.0
     - build: 3
-      digest: sha256:0dd119991eef1da8773b94805a2e733c0fd1be94f5bd0fa43d958a5027b1df5e
+      digest: sha256:ab990c8626291e8e4dd5275b95b5fe06a1ab426d14d7b77cb00676e71bb0dc66
       spec:
         build: 3
         crds:
@@ -1233,7 +1233,7 @@ packages:
           - chart:
               digest: sha256:f9a4a177eb27cff6ae2992dcb6253a2966a31cd9bb42d7d4d40ee7085fe79cd9
               name: kubevirt-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubevirt
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt
               version: 1.9.0-3
             install:
               namespace: kubevirt
@@ -1241,7 +1241,7 @@ packages:
           - chart:
               digest: sha256:00b477088678ef19247c3ac60e3797f890ff65c5aada3d6818e6faca91f1e6a5
               name: kubevirt
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubevirt
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt
               version: 1.9.0-3
             install:
               dependsOn:
@@ -1255,7 +1255,7 @@ packages:
         version: 1.9.0
       version: 1.9.0
     - build: 2
-      digest: sha256:5e2dfdf36d69cc61322f75dc912f60999e6270eb2bb8b67b8d9355a98a352d45
+      digest: sha256:b97c9f78a0384ebdee662115f192704fe596c549dc6d94afb185e13a5fa5d869
       spec:
         build: 2
         crds:
@@ -1269,7 +1269,7 @@ packages:
           - chart:
               digest: sha256:b0ee121828822dbf256ebe739d6e3e931ffffb02e7633dead1ba01d5c614689b
               name: kubevirt-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubevirt
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt
               version: 1.9.0-2
             install:
               namespace: kubevirt
@@ -1277,7 +1277,7 @@ packages:
           - chart:
               digest: sha256:87220c4fedb4b1877702cc7d835d961e2f1901eb1f0dc41eed3e321a810168c9
               name: kubevirt
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kubevirt
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt
               version: 1.9.0-2
             install:
               dependsOn:
@@ -1291,7 +1291,7 @@ packages:
         version: 1.9.0
       version: 1.9.0
     - build: 1
-      digest: sha256:d7eb6f00a1ebba883302c9f498e35e5f2a3544522b02d71cc6350f79410e4bdb
+      digest: sha256:c8f7c66a71b19b64719a37d1c29776eceb5c8a4d28b6bcebfb089d3168bd0176
       spec:
         build: 1
         crds:
@@ -1302,7 +1302,7 @@ packages:
         rollback: {}
         sourceRef:
           kind: OCIArtifact
-          url: oci://ghcr.io/tym83/kubepkg-packages/kubevirt@sha256:29489857290de49d05f336bf60e14c6bb4cce04358b1aaac7621f448946f0080
+          url: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kubevirt@sha256:29489857290de49d05f336bf60e14c6bb4cce04358b1aaac7621f448946f0080
         variants:
         - components:
           - install:
@@ -1327,7 +1327,7 @@ packages:
     home: https://kueue.sigs.k8s.io
     versions:
     - build: 1
-      digest: sha256:07f2a55122a6823d47a21aa00f53e85be05470e1e14476706748f4b7909ddc04
+      digest: sha256:257ca81d9fba198fb0386a0c25dbec7feb773299038f590aed5f4b8e35f220f4
       spec:
         build: 1
         crds:
@@ -1354,7 +1354,7 @@ packages:
           - chart:
               digest: sha256:11d5de4f0690c81a6f80baf4ad742146019c9c675ab4c868bdb2bb7d33f6b6b7
               name: kueue
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kueue
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kueue
               version: 0.20.1-1
             install:
               namespace: kueue-system
@@ -1368,7 +1368,7 @@ packages:
     home: https://kyverno.io/
     versions:
     - build: 2
-      digest: sha256:329684d164e073fbb2ff953597616e2ae1b52015e82dece5b8cbcf5cd6a1bb00
+      digest: sha256:eac9bdf82e1746dbc4b83f87b61299dfce4cd2121d62cafc290d8aa4c03bf7d8
       spec:
         build: 2
         crds:
@@ -1412,7 +1412,7 @@ packages:
           - chart:
               digest: sha256:2aa79cf963a5b43ea38b29d6fe41e3eeac030b8c62c8a092f518a19bbfbad371
               name: kyverno
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kyverno
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kyverno
               version: 1.19.1-2
             install:
               namespace: kyverno
@@ -1421,7 +1421,7 @@ packages:
         version: 1.19.1
       version: 1.19.1
     - build: 1
-      digest: sha256:74b4a319419ee4099882e5b2161bc490b5243773848323560ef9fb410224e2eb
+      digest: sha256:757b81b07559aeb6553d71650916f0d6ca73b77ce328f5459f03bcc09a32712d
       spec:
         build: 1
         crds:
@@ -1456,7 +1456,7 @@ packages:
           - chart:
               digest: sha256:5f49122439d055dd7b617b7a859749d9bf0137da5251632a51a5aae4dbc78d57
               name: kyverno
-              repository: oci://ghcr.io/tym83/kubepkg-packages/kyverno
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/kyverno
               version: 1.19.1-1
             install:
               namespace: kyverno
@@ -1470,7 +1470,7 @@ packages:
     home: https://docs.litellm.ai
     versions:
     - build: 1
-      digest: sha256:b42c62ad6d8b8c2a4cee8e9cea75bfc57d706cb644c2ce30e64e8b33a6b99ec0
+      digest: sha256:bbd7133d7ccbbf7ac16925026d802b056d93e0edb7b025e4ff43d33bf7ca12f7
       spec:
         build: 1
         images:
@@ -1485,7 +1485,7 @@ packages:
           - chart:
               digest: sha256:1d0e76c6f713bb482d6781b79b21259c2ce1d84a38bb7a5300edcb7291152af3
               name: litellm
-              repository: oci://ghcr.io/tym83/kubepkg-packages/litellm
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/litellm
               version: 1.104.2-1
             install:
               namespace: litellm
@@ -1498,7 +1498,7 @@ packages:
     home: https://github.com/rancher/local-path-provisioner
     versions:
     - build: 2
-      digest: sha256:2a262d92ff33fbff3290c7f0e80bbf45bbfe362434c590e88a54147e45d0d63a
+      digest: sha256:950508c7eaa1a78d857b482c503bbd632e15e789c31cf69b81382c5fbfdc8174
       spec:
         build: 2
         images:
@@ -1514,7 +1514,7 @@ packages:
           - chart:
               digest: sha256:95633ac7c6a08524b9fb61d778848633c22576a71fb47b2c3ef79a32f58f1a62
               name: local-path
-              repository: oci://ghcr.io/tym83/kubepkg-packages/local-path
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/local-path
               version: 0.0.37-2
             install:
               namespace: local-path-storage
@@ -1524,7 +1524,7 @@ packages:
         version: 0.0.37
       version: 0.0.37
     - build: 1
-      digest: sha256:7f4cd919ada8bbd4646c876b3687caa5d16aa847ea962bcb8ad38f9cf9396e19
+      digest: sha256:78c75e773a02d547fb7ed86ca53b06afa81e9a09f0730589f2c45d23fa025b5e
       spec:
         build: 1
         provides:
@@ -1537,7 +1537,7 @@ packages:
           - chart:
               digest: sha256:7ef9399429c8187f6f41345626b40ff13adc0696d4f492fb0aef30339ba66c9b
               name: local-path
-              repository: oci://ghcr.io/tym83/kubepkg-packages/local-path
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/local-path
               version: 0.0.37-1
             install:
               namespace: local-path-storage
@@ -1552,7 +1552,7 @@ packages:
     home: https://github.com/rancher/local-path-provisioner
     versions:
     - build: 1
-      digest: sha256:3f15b305485fbcc3629bef72e13b387ba008ec955386964c6b56bbe33274a2fd
+      digest: sha256:dad107025da7c4f23f25e26577e7161c28b0aa07392c0c68dcd790b867fcc4c0
       spec:
         build: 1
         provides:
@@ -1565,7 +1565,7 @@ packages:
           - chart:
               digest: sha256:7e498402bf0c888abcf71261cc20465dd30550fd7625c7a9b7e6d5dea6c685bb
               name: local-path-default
-              repository: oci://ghcr.io/tym83/kubepkg-packages/local-path-default
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/local-path-default
               version: 1.0.0-1
             install:
               namespace: local-path-storage
@@ -1581,7 +1581,7 @@ packages:
     home: https://metallb.universe.tf
     versions:
     - build: 2
-      digest: sha256:2b48e0ab5caae3050c2bd7e3842512f62c567c314894bf2421923ba2db2f537d
+      digest: sha256:4c9f79372af23185c1e552eb8722343dd41166b611a9e593ddf6c95f9a99ab63
       spec:
         build: 2
         crds:
@@ -1606,7 +1606,7 @@ packages:
           - chart:
               digest: sha256:914d2a7c3115b6a00afb160ac2e1cda87399b40f3ec08d9bd4de95e1e1da758c
               name: metallb
-              repository: oci://ghcr.io/tym83/kubepkg-packages/metallb
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/metallb
               version: 0.16.1-2
             install:
               namespace: metallb-system
@@ -1615,7 +1615,7 @@ packages:
           - chart:
               digest: sha256:b339231e2ad8053ddd319654a90e7b0ad68dc194185e6bc2aca1e9755965f3f3
               name: metallb-pools
-              repository: oci://ghcr.io/tym83/kubepkg-packages/metallb
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/metallb
               version: 0.16.1-2
             install:
               dependsOn:
@@ -1626,7 +1626,7 @@ packages:
         version: 0.16.1
       version: 0.16.1
     - build: 1
-      digest: sha256:f975ff2514eba2646039bd3884117df988d58a55389b73c7256fe75178641d69
+      digest: sha256:0e717e9cecfe1c2cde1ed1728c0cac4de1f9e59eafdc169b6157cf4c35df8e88
       spec:
         build: 1
         crds:
@@ -1648,7 +1648,7 @@ packages:
           - chart:
               digest: sha256:129e41884c46633a4c8194bb1917e0cc6cd778a6373d6e79b279c0b50a4c8e6b
               name: metallb
-              repository: oci://ghcr.io/tym83/kubepkg-packages/metallb
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/metallb
               version: 0.16.1-1
             install:
               namespace: metallb-system
@@ -1657,7 +1657,7 @@ packages:
           - chart:
               digest: sha256:26d350d8a4e613a14a7ca91d1dadfee9cc5afdc8dcab8a3c0bb944b4d2ff909a
               name: metallb-pools
-              repository: oci://ghcr.io/tym83/kubepkg-packages/metallb
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/metallb
               version: 0.16.1-1
             install:
               dependsOn:
@@ -1672,7 +1672,7 @@ packages:
     home: https://github.com/kubernetes-sigs/metrics-server
     versions:
     - build: 3
-      digest: sha256:30b03f98a9e3793b0d2d81f1e4e91818cea165744462d089f641cf48000ac574
+      digest: sha256:e53e75aa6272a46159f2425ff2f09b74512502f2378928e63e1e5fabe6ddf75d
       spec:
         build: 3
         images:
@@ -1687,7 +1687,7 @@ packages:
           - chart:
               digest: sha256:d142df3c5e0328b12d6549c3bc92c44f888f39b6829a558c0e2cefa659d9a2f3
               name: metrics-server
-              repository: oci://ghcr.io/tym83/kubepkg-packages/metrics-server
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/metrics-server
               version: 0.9.0-3
             install:
               namespace: metrics-server
@@ -1697,7 +1697,7 @@ packages:
         version: 0.9.0
       version: 0.9.0
     - build: 2
-      digest: sha256:6feffdafb55fe8b6da4dfca15fcc6f26413ff2f59bb37bc1f95b159a62a96e0b
+      digest: sha256:b09a2d88384cf810812848908cc837b8742463ada1862d21c72d8608e989a2ae
       spec:
         build: 2
         provides:
@@ -1710,7 +1710,7 @@ packages:
           - chart:
               digest: sha256:ed33711988739224d15ae1ab48fe04ed2facc647dc3ae36007bb16f989124270
               name: metrics-server
-              repository: oci://ghcr.io/tym83/kubepkg-packages/metrics-server
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/metrics-server
               version: 0.9.0-2
             install:
               namespace: metrics-server
@@ -1720,7 +1720,7 @@ packages:
         version: 0.9.0
       version: 0.9.0
     - build: 1
-      digest: sha256:9e5cd8dbe72080509d9e41a014eeb05897e2a3a003ca7414d3bf8cab71d40e41
+      digest: sha256:af1029338f823b97ce0f0cc2d82b2aeced862a21ea80f24e429eee0345594c36
       spec:
         build: 1
         provides:
@@ -1730,7 +1730,7 @@ packages:
           safe: true
         sourceRef:
           kind: OCIArtifact
-          url: oci://ghcr.io/tym83/kubepkg-packages/metrics-server@sha256:4dd0d8d761d56a3062b35f9b26322f78b47f1cc3628f50dd8c237d115c8829cc
+          url: oci://ghcr.io/kuberoot-dev/kubepkg-packages/metrics-server@sha256:4dd0d8d761d56a3062b35f9b26322f78b47f1cc3628f50dd8c237d115c8829cc
         variants:
         - components:
           - install:
@@ -1747,7 +1747,7 @@ packages:
     home: https://milvus.io
     versions:
     - build: 1
-      digest: sha256:6538ffa008bf88202b8e5583c02216bdae8b042afa359e3d137dca15cadc9595
+      digest: sha256:bc6c77dcdfb7bc4a490099530bd38bfad1b6535816da5f8b236b429f3c53579d
       spec:
         build: 1
         images:
@@ -1763,7 +1763,7 @@ packages:
           - chart:
               digest: sha256:3845cd72240ec4f6c74754d9aee3ec6cef79d5092f87c3ed5c53cce5d93304df
               name: milvus
-              repository: oci://ghcr.io/tym83/kubepkg-packages/milvus
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/milvus
               version: 3.0.1-1
             install:
               namespace: milvus
@@ -1776,7 +1776,7 @@ packages:
     home: https://mlflow.org
     versions:
     - build: 1
-      digest: sha256:f42b17214b4035d78be7e92b955cc6067df2c64c59cbda9ccd0d16a2071d8712
+      digest: sha256:41f6d52c5bf7bcb15602e75836ec46ae53207bb344edb41bf2cf647d8b36d6a5
       spec:
         build: 1
         images:
@@ -1790,7 +1790,7 @@ packages:
           - chart:
               digest: sha256:d6adde43d379f13239a82023906a2d66ba73ee5c816d34670b18f024ceeee015
               name: mlflow
-              repository: oci://ghcr.io/tym83/kubepkg-packages/mlflow
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/mlflow
               version: 3.16.0-1
             install:
               namespace: mlflow
@@ -1804,7 +1804,7 @@ packages:
     home: https://github.com/NVIDIA/k8s-device-plugin
     versions:
     - build: 1
-      digest: sha256:5f9b41cd863d335147899c5d9c9cd8df1d2e74c2f0ef2aabf6f125d7547db9ad
+      digest: sha256:9f58315612072844ec8a76d1fd725ace6d51e11bbe4944c58fc5f5899e41b4e4
       spec:
         build: 1
         conflicts:
@@ -1820,7 +1820,7 @@ packages:
           - chart:
               digest: sha256:c101992c7f4687699fc3158fdbd7ada02ec5a4e472f8ddf5d2a6327747724e9d
               name: nvidia-device-plugin
-              repository: oci://ghcr.io/tym83/kubepkg-packages/nvidia-device-plugin
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/nvidia-device-plugin
               version: 0.20.1-1
             install:
               namespace: nvidia-device-plugin
@@ -1835,7 +1835,7 @@ packages:
     home: https://ollama.com
     versions:
     - build: 1
-      digest: sha256:dcec28e44882dc10146e8679a7bc812f6043d8fa120359e3950bce6942299e59
+      digest: sha256:cbfd4bd2aa813da308cae2cc3bce7c53037e5d9f8b5237d7e9e6c16f3618b7e3
       spec:
         build: 1
         images:
@@ -1850,7 +1850,7 @@ packages:
           - chart:
               digest: sha256:01fa56f2ff77a4301de12875ed4417988ed7533d8a361bc6c8d3342608705649
               name: ollama
-              repository: oci://ghcr.io/tym83/kubepkg-packages/ollama
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/ollama
               version: 0.40.2-1
             install:
               namespace: ollama
@@ -1864,7 +1864,7 @@ packages:
     home: https://openwebui.com
     versions:
     - build: 1
-      digest: sha256:ec9bbc28d2ebda085d6b8932e2bf0e5285b23fa3acf5e85f79a9bb8ae0c26b2e
+      digest: sha256:1e23495f5fdde40c500d1af407e81f3bef86ce03ebbf504a3db1d58009cf0bb8
       spec:
         build: 1
         images:
@@ -1878,7 +1878,7 @@ packages:
           - chart:
               digest: sha256:fc5124f3c493f855af05c93c1d12b0656bcab74a43b0b4f79f1b47a5ab6356c2
               name: open-webui
-              repository: oci://ghcr.io/tym83/kubepkg-packages/open-webui
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/open-webui
               version: 0.11.4-1
             install:
               namespace: open-webui
@@ -1892,7 +1892,7 @@ packages:
     home: https://perses.dev
     versions:
     - build: 2
-      digest: sha256:541cc1d03bc99d31244f07de52806c9ccd318485b0f27935ac52e776b7be45cb
+      digest: sha256:fcccf16496fa98a523636b0a586e22d21a25c4b15af1ffbfe2b120d3d1d84ff0
       spec:
         build: 2
         crds:
@@ -1914,7 +1914,7 @@ packages:
           - chart:
               digest: sha256:a8f7f4f009c616090c1194c2c2e0332bf1ecb2e472e2d2a7ad89f3ba8faa51ff
               name: perses-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/perses-operator
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/perses-operator
               version: 0.5.0-2
             install:
               namespace: perses-operator
@@ -1923,7 +1923,7 @@ packages:
         version: 0.5.0
       version: 0.5.0
     - build: 1
-      digest: sha256:d3f4ed0b008b3d7dc7e6bca3b2a0c4db230d7062d6afd4e2087f01dbb5132329
+      digest: sha256:b4b0c0d6283a83b8529026a7e6b4fe7c093885f563a0713d2d2236545229ee2d
       spec:
         build: 1
         crds:
@@ -1945,7 +1945,7 @@ packages:
           - chart:
               digest: sha256:3bb725f00ecc31e689200274287c9be6a956cc592067d91ceda4ff5fc56ccd3d
               name: perses-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/perses-operator
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/perses-operator
               version: 0.5.0-1
             install:
               namespace: perses-operator
@@ -1959,7 +1959,7 @@ packages:
     home: https://piraeus.io
     versions:
     - build: 1
-      digest: sha256:ecb5d749f404f9847371b90a59475b0717d3a45c2da5a6048f311e3f354c0cc4
+      digest: sha256:d6505d8acc7c506f911cdb4779e6e932722657c1175f106f3cc18482bd423b7c
       spec:
         build: 1
         crds:
@@ -1993,7 +1993,7 @@ packages:
           - chart:
               digest: sha256:37d7f3e5fde594907d184881021097e5b00e15dab00924f73ebe9dbc0034512a
               name: piraeus
-              repository: oci://ghcr.io/tym83/kubepkg-packages/piraeus
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/piraeus
               version: 2.12.0-1
             install:
               namespace: piraeus-datastore
@@ -2002,7 +2002,7 @@ packages:
           - chart:
               digest: sha256:9d22fc6b495fb5ede72c94ea3cb31bb38f8df9934d5ae2e672c57fb547057a7a
               name: piraeus-cluster
-              repository: oci://ghcr.io/tym83/kubepkg-packages/piraeus
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/piraeus
               version: 2.12.0-1
             install:
               dependsOn:
@@ -2023,7 +2023,7 @@ packages:
     home: https://qdrant.tech
     versions:
     - build: 1
-      digest: sha256:2c179b5d100421392f02ba4b5906e8e4dc3c85d2b8c131aa464215001facfe25
+      digest: sha256:5bcb0b00a98f3aec938533d70566508a009ac3b290fcacb856c32d4370e9f71e
       spec:
         build: 1
         images:
@@ -2038,7 +2038,7 @@ packages:
           - chart:
               digest: sha256:6c02d380ea54d016c3cf163d52ec152d78c94d472dec078dd9175e0931ba512d
               name: qdrant
-              repository: oci://ghcr.io/tym83/kubepkg-packages/qdrant
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/qdrant
               version: 1.19.2-1
             install:
               namespace: qdrant
@@ -2052,7 +2052,7 @@ packages:
     home: https://github.com/seaweedfs/seaweedfs
     versions:
     - build: 1
-      digest: sha256:ca4734fb6e5ec9de526d5933aeff771b9d026b6b2101fd9326c908732be5a285
+      digest: sha256:d65fa09e459701999e58375b4befda31e21be42fc169482e50bb2c0307eff653
       spec:
         build: 1
         images:
@@ -2067,7 +2067,7 @@ packages:
           - chart:
               digest: sha256:87e8c0a1baecae454fa06f3d92e2f5b0c13b93462c6fb4f56252f86261ef44e2
               name: seaweedfs
-              repository: oci://ghcr.io/tym83/kubepkg-packages/seaweedfs
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/seaweedfs
               version: 4.48.0-1
             install:
               namespace: seaweedfs
@@ -2080,7 +2080,7 @@ packages:
     home: https://github.com/kubernetes-csi/external-snapshotter
     versions:
     - build: 2
-      digest: sha256:3639dacac219ba52d3df9b2902fa5a8bac74ab720aeb6e1c00ea05e5f203900a
+      digest: sha256:c96239a8d12612a56ecaa4d8ef4b528d48375182e0ace959f41bf5c26bc84b49
       spec:
         build: 2
         crds:
@@ -2098,7 +2098,7 @@ packages:
           - chart:
               digest: sha256:46ac87f9a56c736063bba66000e6354e673299b67857dca55d2fd23a33826f6f
               name: snapshot-controller
-              repository: oci://ghcr.io/tym83/kubepkg-packages/snapshot-controller
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/snapshot-controller
               version: 8.5.0-2
             install:
               namespace: kube-system
@@ -2107,7 +2107,7 @@ packages:
         version: 8.5.0
       version: 8.5.0
     - build: 1
-      digest: sha256:72715b611f2b3bf2f7fbf8145985e767a00de6329acd7a76d08eecf074c0217b
+      digest: sha256:f7a66f37195d06fc711853551ec1c52e828af3b3cc1cc7b29765377819e039f0
       spec:
         build: 1
         crds:
@@ -2123,7 +2123,7 @@ packages:
           - chart:
               digest: sha256:9d70c33e7c0427460237444b938e2e35fbad4c2a379b4ae2d6bb7587e934de28
               name: snapshot-controller
-              repository: oci://ghcr.io/tym83/kubepkg-packages/snapshot-controller
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/snapshot-controller
               version: 8.5.0-1
             install:
               namespace: kube-system
@@ -2137,7 +2137,7 @@ packages:
     home: https://github.com/vmware-tanzu/velero
     versions:
     - build: 2
-      digest: sha256:d704fd0db79cf2a13d0844dfd3beda2736a55cfc6ec7d5fdb1e41fb4f33d39a8
+      digest: sha256:36f25621b206e3789cd3087037320f756ff66b1b93f7de26ba5de373b0fc985f
       spec:
         build: 2
         crds:
@@ -2166,7 +2166,7 @@ packages:
           - chart:
               digest: sha256:2f6b0c22ac66f5243aeab0e2c16a6e14c8d7d7369fa9a9394fad89be9e036cf5
               name: velero
-              repository: oci://ghcr.io/tym83/kubepkg-packages/velero
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/velero
               version: 1.18.2-2
             install:
               namespace: velero
@@ -2177,7 +2177,7 @@ packages:
         version: 1.18.2
       version: 1.18.2
     - build: 1
-      digest: sha256:9c0f22dedc3a92c2169dcccb5cbbf31c19a40fd58719b9c40f54e96744ccb4df
+      digest: sha256:163a2c8989a815c0db417984d07b73ea221c953e41d4907ae73ed5d2047146ba
       spec:
         build: 1
         crds:
@@ -2203,7 +2203,7 @@ packages:
           - chart:
               digest: sha256:191ea8313499ea7dc6b82e2c059de5dc52c4318e72e47c61b90a36512f9dcfb0
               name: velero
-              repository: oci://ghcr.io/tym83/kubepkg-packages/velero
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/velero
               version: 1.18.2-1
             install:
               namespace: velero
@@ -2219,7 +2219,7 @@ packages:
     home: https://docs.victoriametrics.com/victorialogs/
     versions:
     - build: 2
-      digest: sha256:258052a82e4a9c19f33180271aff75acf0c9c188aab2031faeac141a74bc41f5
+      digest: sha256:1de6c3984ed2d8511f5ef15e6e8a4a608ee75f89ed26ccf2fb583f4e04702cf5
       spec:
         build: 2
         images:
@@ -2235,7 +2235,7 @@ packages:
           - chart:
               digest: sha256:09300d9597409c0347a234980697a089d325e8901a987a983317e02c44e4f648
               name: victoria-logs
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-logs
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-logs
               version: 1.53.0-2
             install:
               namespace: logging
@@ -2244,7 +2244,7 @@ packages:
           - chart:
               digest: sha256:907065eb8323a2bb56d03a042c504d682e0697743f86f80a5dc590dd6620e66a
               name: fluent-bit
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-logs
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-logs
               version: 1.53.0-2
             install:
               dependsOn:
@@ -2257,7 +2257,7 @@ packages:
         version: 1.53.0
       version: 1.53.0
     - build: 1
-      digest: sha256:d3c3cbd2d03ddedf340ccec94f3ddbd316d42f23408b23c77102dcbc05c8a52e
+      digest: sha256:5510a6133ec316e057ddb3f7f1343e07d9c0adf150fdffb7a18548e75a59e279
       spec:
         build: 1
         provides:
@@ -2269,7 +2269,7 @@ packages:
           - chart:
               digest: sha256:71fd45b3139f38bc97d06f498e264033c04d0480e5c6425fd9402fa8fbaf2f43
               name: victoria-logs
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-logs
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-logs
               version: 1.53.0-1
             install:
               namespace: logging
@@ -2278,7 +2278,7 @@ packages:
           - chart:
               digest: sha256:96aba6b94943cff5485942c2e92a5e55788434dba6939f5848e19794d43c1f99
               name: fluent-bit
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-logs
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-logs
               version: 1.53.0-1
             install:
               dependsOn:
@@ -2296,7 +2296,7 @@ packages:
     home: https://github.com/VictoriaMetrics/helm-charts
     versions:
     - build: 3
-      digest: sha256:682cd424911171be3ea1fe261a959d56da3f08aa939cab928277f5780b00d80c
+      digest: sha256:3ab26033405fe4c15cfa926de7e2a27ec58b9af935bc99fa3d8d011e7f724cc8
       spec:
         build: 3
         images:
@@ -2316,7 +2316,7 @@ packages:
           - chart:
               digest: sha256:048c09c7cb516e5aff9730bd7e81d995e814395c0a09c10767eee00cbbd682ff
               name: victoria-metrics
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-metrics
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-metrics
               version: 1.153.0-3
             install:
               namespace: monitoring
@@ -2324,7 +2324,7 @@ packages:
           - chart:
               digest: sha256:f55b08b2011a532bfce7c405c5ce56ac243e5df22e355ac9bd10e37a3c7d5e14
               name: node-exporter
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-metrics
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-metrics
               version: 1.153.0-3
             install:
               namespace: node-exporter
@@ -2334,7 +2334,7 @@ packages:
           - chart:
               digest: sha256:b28b40377a7a93f71e1f074257405ffc797b46b9d09b5ec5b3ef060ffbd2bffc
               name: scrapes
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-metrics
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-metrics
               version: 1.153.0-3
             install:
               dependsOn:
@@ -2350,7 +2350,7 @@ packages:
         version: 1.153.0
       version: 1.153.0
     - build: 2
-      digest: sha256:6a0dea9ef1c8f0f27aa1119ecaa3c8b5d302f140a092cc69e5adebee53c2c3af
+      digest: sha256:29a68cb1e106c0acda900bb16d220d6eb7cd84d64305ff02801a26df471008f2
       spec:
         build: 2
         provides:
@@ -2362,7 +2362,7 @@ packages:
           - chart:
               digest: sha256:1ecb12062858bc8da52d133ab05b7b673ea10b3d858fa4ad1e5654dcad053fa1
               name: victoria-metrics
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-metrics
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-metrics
               version: 1.153.0-2
             install:
               namespace: monitoring
@@ -2370,7 +2370,7 @@ packages:
           - chart:
               digest: sha256:1c912f0820c76a13bd0c61d31a59da1a9c9d111a421d18f65ff92ae79237195f
               name: node-exporter
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-metrics
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-metrics
               version: 1.153.0-2
             install:
               namespace: node-exporter
@@ -2380,7 +2380,7 @@ packages:
           - chart:
               digest: sha256:9b85ce835837658006b50cdb26be32dadfc949f83704f6b3cfcd2ac776fad984
               name: scrapes
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-metrics
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-metrics
               version: 1.153.0-2
             install:
               dependsOn:
@@ -2396,7 +2396,7 @@ packages:
         version: 1.153.0
       version: 1.153.0
     - build: 1
-      digest: sha256:5b8b0a92be656b17bfa930c8361b30858ef95707d859e026301eb74130379928
+      digest: sha256:6ef9bac171db5f6f0cdf10fb2fa6e16b3a4efdf88dc2fd8a5f677103d8e97245
       spec:
         build: 1
         provides:
@@ -2408,7 +2408,7 @@ packages:
           - chart:
               digest: sha256:2ac2b641d838b9fdcaef223872d0e4cc02891e1c3b3aac32c6762ee9013fb425
               name: victoria-metrics
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-metrics
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-metrics
               version: 1.153.0-1
             install:
               namespace: monitoring
@@ -2416,7 +2416,7 @@ packages:
           - chart:
               digest: sha256:5bf2897f90e550890350ef6cc461639ade5c4597a14f3af987cef95a4be14ed1
               name: node-exporter
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-metrics
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-metrics
               version: 1.153.0-1
             install:
               namespace: node-exporter
@@ -2426,7 +2426,7 @@ packages:
           - chart:
               digest: sha256:e7301b426fa094b755286eecd02ae452d704556d760941f3c77f2901bf170328
               name: scrapes
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-metrics
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-metrics
               version: 1.153.0-1
             install:
               dependsOn:
@@ -2446,7 +2446,7 @@ packages:
     home: https://github.com/VictoriaMetrics/operator
     versions:
     - build: 2
-      digest: sha256:573daefee83f479a7d8adc70ab9e8d4a3a890fdc64bc960637ecbc7addaf1e98
+      digest: sha256:483c3b2e52994b471a2a184d8548dee950ec467866c377e38301bb05b5e5beee
       spec:
         build: 2
         crds:
@@ -2488,7 +2488,7 @@ packages:
           - chart:
               digest: sha256:fe6ec4a337873080a542decd0b01e602e8c5f453ad80d56164a492e2f2a19e3f
               name: victoria-metrics-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-metrics-operator
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-metrics-operator
               version: 0.75.0-2
             install:
               namespace: victoria-metrics
@@ -2497,7 +2497,7 @@ packages:
         version: 0.75.0
       version: 0.75.0
     - build: 1
-      digest: sha256:f73c7f1116fea78274bf56730845b077cc5a8e77ce72317ab4dd8f3b3cb5065d
+      digest: sha256:43dec7aa6854e079e78915a0ba91e3cf3fe98a40c124f2d994c34939f7722242
       spec:
         build: 1
         crds:
@@ -2536,7 +2536,7 @@ packages:
           - chart:
               digest: sha256:3958ada9dc52d3775d567f63c5692e63d61631c98d12f3c418048160a58a9b8e
               name: victoria-metrics-operator
-              repository: oci://ghcr.io/tym83/kubepkg-packages/victoria-metrics-operator
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/victoria-metrics-operator
               version: 0.75.0-1
             install:
               namespace: victoria-metrics
@@ -2567,7 +2567,7 @@ packages:
     home: https://github.com/vllm-project/vllm
     versions:
     - build: 1
-      digest: sha256:a743bfea758e4a6dc3ca51a54b96c0106eec980fba4eae444672102df591a19b
+      digest: sha256:e74676b869362851615dc01fd294e7b1d2ed2689edf13572f81daa701e39f85d
       spec:
         build: 1
         images:
@@ -2583,7 +2583,7 @@ packages:
           - chart:
               digest: sha256:1ba91843e85818d1bec09b225ef71cf530ab43bc78b5a8369bf0d2bb59381756
               name: vllm
-              repository: oci://ghcr.io/tym83/kubepkg-packages/vllm
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/vllm
               version: 0.31.0-1
             install:
               namespace: vllm
@@ -2598,7 +2598,7 @@ packages:
     home: https://volcano.sh
     versions:
     - build: 1
-      digest: sha256:188acdf831683c60fadd0c6743c47e8f3c30a7e1d65db2707c1ffff1f88b2fd4
+      digest: sha256:a98ed940a2cf4b9cdfd44897949c63778f1b9c4b7e8dc73c65a16684a498f338
       spec:
         build: 1
         crds:
@@ -2627,7 +2627,7 @@ packages:
           - chart:
               digest: sha256:f452436041d31a6a922c521c274fc3fd570d573ba4f2b07f2f47c88e937feda9
               name: volcano
-              repository: oci://ghcr.io/tym83/kubepkg-packages/volcano
+              repository: oci://ghcr.io/kuberoot-dev/kubepkg-packages/volcano
               version: 1.15.3-1
             install:
               namespace: volcano-system

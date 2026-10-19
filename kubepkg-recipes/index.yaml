@@ -1,5 +1,5 @@
 apiVersion: kubepkg.dev/v1alpha1
-generated: "2026-10-12T11:03:00Z"
+generated: "2026-10-19T09:04:00Z"
 kind: RepositoryIndex
 packages:
   ai-gpu:
